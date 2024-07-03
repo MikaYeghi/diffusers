@@ -835,7 +835,7 @@ class StableDiffusionImg2ImgPipeline(
     def interrupt(self):
         return self._interrupt
 
-    @torch.no_grad()
+    # @torch.no_grad()
     @replace_example_docstring(EXAMPLE_DOC_STRING)
     def __call__(
         self,
